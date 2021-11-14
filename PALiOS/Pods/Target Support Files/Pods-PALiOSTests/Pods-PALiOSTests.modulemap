@@ -1,0 +1,6 @@
+framework module Pods_PALiOSTests {
+  umbrella header "Pods-PALiOSTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

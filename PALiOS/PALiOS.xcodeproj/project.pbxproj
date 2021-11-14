@@ -1,0 +1,949 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B8B106A39B89130F6D4AF6C /* Pods_PALiOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B542FB438950553798F5000 /* Pods_PALiOSTests.framework */; };
+		8A1DF02E4BF9D0A2BEA53AFA /* Pods_PALiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30ECF042212C8F651A82967F /* Pods_PALiOS.framework */; };
+		D919EDD720798CEF00CB4CE0 /* TherapistAssociatePAL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D919EDD620798CEF00CB4CE0 /* TherapistAssociatePAL.swift */; };
+		D919EDD92079934A00CB4CE0 /* TherapistRecordData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D919EDD82079934A00CB4CE0 /* TherapistRecordData.swift */; };
+		D92E46F72082937D00500045 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D92E46F62082937D00500045 /* ExternalAccessory.framework */; };
+		D97621502086FE23000FA1D4 /* TherapistObserveStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = D976214F2086FE23000FA1D4 /* TherapistObserveStatistics.swift */; };
+		D97621522086FE89000FA1D4 /* DoctorObserveStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97621512086FE89000FA1D4 /* DoctorObserveStatistics.swift */; };
+		D97621542086FE9D000FA1D4 /* TherapistRateSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97621532086FE9D000FA1D4 /* TherapistRateSession.swift */; };
+		D98BE5B3201AE226003CA0A6 /* DoctorSelectPatient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98BE5B2201AE226003CA0A6 /* DoctorSelectPatient.swift */; };
+		D9927FF4208E6D200042B8C2 /* RoundDateResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9927FF3208E6D200042B8C2 /* RoundDateResultTableViewCell.swift */; };
+		D9C10DDC2047074000993CC0 /* PALiOSstructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C10DDB2047074000993CC0 /* PALiOSstructs.swift */; };
+		D9C10DE220470B4A00993CC0 /* BackendDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C10DE120470B4A00993CC0 /* BackendDataStorage.swift */; };
+		D9C73A9B207A85FB0007CA2D /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C73A9A207A85FA0007CA2D /* CoreBluetooth.framework */; };
+		D9DDD06E203D51E000AD60CD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D9DDD06D203D51E000AD60CD /* GoogleService-Info.plist */; };
+		D9EDAD6120196BB200F14050 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EDAD6020196BB200F14050 /* AppDelegate.swift */; };
+		D9EDAD6320196BB200F14050 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EDAD6220196BB200F14050 /* ViewController.swift */; };
+		D9EDAD6620196BB200F14050 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9EDAD6420196BB200F14050 /* Main.storyboard */; };
+		D9EDAD6920196BB200F14050 /* PALiOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D9EDAD6720196BB200F14050 /* PALiOS.xcdatamodeld */; };
+		D9EDAD6B20196BB200F14050 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9EDAD6A20196BB200F14050 /* Assets.xcassets */; };
+		D9EDAD6E20196BB200F14050 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9EDAD6C20196BB200F14050 /* LaunchScreen.storyboard */; };
+		D9EDAD7920196BB200F14050 /* PALiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EDAD7820196BB200F14050 /* PALiOSTests.swift */; };
+		D9EDAD8420196BB200F14050 /* PALiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EDAD8320196BB200F14050 /* PALiOSUITests.swift */; };
+		D9EDAD9220196DC000F14050 /* DoctorMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EDAD9120196DBF00F14050 /* DoctorMain.swift */; };
+		D9EDAD9420196DCF00F14050 /* DoctorViewStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EDAD9320196DCF00F14050 /* DoctorViewStatistics.swift */; };
+		D9EDAD9620196DDE00F14050 /* DoctorHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EDAD9520196DDE00F14050 /* DoctorHelp.swift */; };
+		D9EE41252066D515007408DA /* PatientSelectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EE41242066D515007408DA /* PatientSelectTableViewCell.swift */; };
+		D9EFA82621F5037100924DE8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D9EFA82521F5037100924DE8 /* README.md */; };
+		D9F76F4E208E98CA005C55A1 /* StatisticsViewerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F76F4D208E98CA005C55A1 /* StatisticsViewerTableViewCell.swift */; };
+		D9FAC560201EC7F400360C91 /* ParentMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FAC55F201EC7F400360C91 /* ParentMain.swift */; };
+		D9FAC562201EC80700360C91 /* ParentStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FAC561201EC80700360C91 /* ParentStatus.swift */; };
+		D9FAC564201EC81B00360C91 /* ParentHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FAC563201EC81B00360C91 /* ParentHelp.swift */; };
+		D9FAC566201EC83C00360C91 /* TherapistSelectPatient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FAC565201EC83C00360C91 /* TherapistSelectPatient.swift */; };
+		D9FAC568201EC84C00360C91 /* TherapistMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FAC567201EC84C00360C91 /* TherapistMain.swift */; };
+		D9FAC56A201EC85D00360C91 /* TherapistViewStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FAC569201EC85D00360C91 /* TherapistViewStatistics.swift */; };
+		D9FAC56C201EC87200360C91 /* TherapistCreateAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FAC56B201EC87200360C91 /* TherapistCreateAccount.swift */; };
+		D9FAC56E201EC88D00360C91 /* TherapistReleasePatient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FAC56D201EC88D00360C91 /* TherapistReleasePatient.swift */; };
+		D9FAC570201EC8A000360C91 /* TherapistChoosePatient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FAC56F201EC8A000360C91 /* TherapistChoosePatient.swift */; };
+		D9FAC572201EC8B200360C91 /* TherapistRecordLullaby.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FAC571201EC8B200360C91 /* TherapistRecordLullaby.swift */; };
+		D9FAC574201EC8F400360C91 /* TherapistAssociateIDLullaby.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FAC573201EC8F400360C91 /* TherapistAssociateIDLullaby.swift */; };
+		D9FAC576201EC92A00360C91 /* TherapistHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FAC575201EC92A00360C91 /* TherapistHelp.swift */; };
+		DC9D9DE82E8DD7175AF51C27 /* Pods_PALiOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B6C3E057685FBFC57EC816 /* Pods_PALiOSUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D9EDAD7520196BB200F14050 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9EDAD5520196BB200F14050 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9EDAD5C20196BB200F14050;
+			remoteInfo = PALiOS;
+		};
+		D9EDAD8020196BB200F14050 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9EDAD5520196BB200F14050 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9EDAD5C20196BB200F14050;
+			remoteInfo = PALiOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B542FB438950553798F5000 /* Pods_PALiOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PALiOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D59EF6E5FC1CF8F0237455E /* Pods-PALiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PALiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PALiOS/Pods-PALiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		21DEDCD8DC504558C7FE7FC1 /* Pods-PALiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PALiOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-PALiOS/Pods-PALiOS.release.xcconfig"; sourceTree = "<group>"; };
+		30ECF042212C8F651A82967F /* Pods_PALiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PALiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4331D5F01221D5A322BCE043 /* Pods-PALiOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PALiOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PALiOSUITests/Pods-PALiOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A54D83F39E401349B00F7186 /* Pods-PALiOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PALiOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PALiOSUITests/Pods-PALiOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D919EDD620798CEF00CB4CE0 /* TherapistAssociatePAL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TherapistAssociatePAL.swift; sourceTree = "<group>"; };
+		D919EDD82079934A00CB4CE0 /* TherapistRecordData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TherapistRecordData.swift; sourceTree = "<group>"; };
+		D92E46F62082937D00500045 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		D92E46F82082937D00500045 /* PALiOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PALiOS.entitlements; sourceTree = "<group>"; };
+		D976214F2086FE23000FA1D4 /* TherapistObserveStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TherapistObserveStatistics.swift; sourceTree = "<group>"; };
+		D97621512086FE89000FA1D4 /* DoctorObserveStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorObserveStatistics.swift; sourceTree = "<group>"; };
+		D97621532086FE9D000FA1D4 /* TherapistRateSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TherapistRateSession.swift; sourceTree = "<group>"; };
+		D98BE5B2201AE226003CA0A6 /* DoctorSelectPatient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorSelectPatient.swift; sourceTree = "<group>"; };
+		D9927FF3208E6D200042B8C2 /* RoundDateResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundDateResultTableViewCell.swift; sourceTree = "<group>"; };
+		D9C10DDB2047074000993CC0 /* PALiOSstructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PALiOSstructs.swift; path = /Users/samuelreles/GitHub/PALiOS/PALiOS/PALiOS/PALiOSstructs.swift; sourceTree = "<absolute>"; };
+		D9C10DE120470B4A00993CC0 /* BackendDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendDataStorage.swift; sourceTree = "<group>"; };
+		D9C73A9A207A85FA0007CA2D /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		D9DDD06D203D51E000AD60CD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D9EDAD5D20196BB200F14050 /* PALiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PALiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9EDAD6020196BB200F14050 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D9EDAD6220196BB200F14050 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D9EDAD6520196BB200F14050 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D9EDAD6820196BB200F14050 /* PALiOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PALiOS.xcdatamodel; sourceTree = "<group>"; };
+		D9EDAD6A20196BB200F14050 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D9EDAD6D20196BB200F14050 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D9EDAD6F20196BB200F14050 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9EDAD7420196BB200F14050 /* PALiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PALiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9EDAD7820196BB200F14050 /* PALiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PALiOSTests.swift; sourceTree = "<group>"; };
+		D9EDAD7A20196BB200F14050 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9EDAD7F20196BB200F14050 /* PALiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PALiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9EDAD8320196BB200F14050 /* PALiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PALiOSUITests.swift; sourceTree = "<group>"; };
+		D9EDAD8520196BB200F14050 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9EDAD9120196DBF00F14050 /* DoctorMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorMain.swift; sourceTree = "<group>"; };
+		D9EDAD9320196DCF00F14050 /* DoctorViewStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorViewStatistics.swift; sourceTree = "<group>"; };
+		D9EDAD9520196DDE00F14050 /* DoctorHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorHelp.swift; sourceTree = "<group>"; };
+		D9EE41242066D515007408DA /* PatientSelectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientSelectTableViewCell.swift; sourceTree = "<group>"; };
+		D9EFA82521F5037100924DE8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D9F76F4D208E98CA005C55A1 /* StatisticsViewerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewerTableViewCell.swift; sourceTree = "<group>"; };
+		D9FAC55F201EC7F400360C91 /* ParentMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentMain.swift; sourceTree = "<group>"; };
+		D9FAC561201EC80700360C91 /* ParentStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentStatus.swift; sourceTree = "<group>"; };
+		D9FAC563201EC81B00360C91 /* ParentHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentHelp.swift; sourceTree = "<group>"; };
+		D9FAC565201EC83C00360C91 /* TherapistSelectPatient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TherapistSelectPatient.swift; sourceTree = "<group>"; };
+		D9FAC567201EC84C00360C91 /* TherapistMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TherapistMain.swift; sourceTree = "<group>"; };
+		D9FAC569201EC85D00360C91 /* TherapistViewStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TherapistViewStatistics.swift; sourceTree = "<group>"; };
+		D9FAC56B201EC87200360C91 /* TherapistCreateAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TherapistCreateAccount.swift; sourceTree = "<group>"; };
+		D9FAC56D201EC88D00360C91 /* TherapistReleasePatient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TherapistReleasePatient.swift; sourceTree = "<group>"; };
+		D9FAC56F201EC8A000360C91 /* TherapistChoosePatient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TherapistChoosePatient.swift; sourceTree = "<group>"; };
+		D9FAC571201EC8B200360C91 /* TherapistRecordLullaby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TherapistRecordLullaby.swift; sourceTree = "<group>"; };
+		D9FAC573201EC8F400360C91 /* TherapistAssociateIDLullaby.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TherapistAssociateIDLullaby.swift; sourceTree = "<group>"; };
+		D9FAC575201EC92A00360C91 /* TherapistHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TherapistHelp.swift; sourceTree = "<group>"; };
+		EFFD7538C7CA8AD04BFE86F2 /* Pods-PALiOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PALiOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PALiOSTests/Pods-PALiOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F52F4F0372B5A7D91399A4CF /* Pods-PALiOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PALiOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PALiOSTests/Pods-PALiOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		F8B6C3E057685FBFC57EC816 /* Pods_PALiOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PALiOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D9EDAD5A20196BB200F14050 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D92E46F72082937D00500045 /* ExternalAccessory.framework in Frameworks */,
+				D9C73A9B207A85FB0007CA2D /* CoreBluetooth.framework in Frameworks */,
+				8A1DF02E4BF9D0A2BEA53AFA /* Pods_PALiOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9EDAD7120196BB200F14050 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B8B106A39B89130F6D4AF6C /* Pods_PALiOSTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9EDAD7C20196BB200F14050 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC9D9DE82E8DD7175AF51C27 /* Pods_PALiOSUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A548B63640F9EBC316AAD144 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D92E46F62082937D00500045 /* ExternalAccessory.framework */,
+				D9C73A9A207A85FA0007CA2D /* CoreBluetooth.framework */,
+				30ECF042212C8F651A82967F /* Pods_PALiOS.framework */,
+				1B542FB438950553798F5000 /* Pods_PALiOSTests.framework */,
+				F8B6C3E057685FBFC57EC816 /* Pods_PALiOSUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D668C02251E4308891CBEB30 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1D59EF6E5FC1CF8F0237455E /* Pods-PALiOS.debug.xcconfig */,
+				21DEDCD8DC504558C7FE7FC1 /* Pods-PALiOS.release.xcconfig */,
+				EFFD7538C7CA8AD04BFE86F2 /* Pods-PALiOSTests.debug.xcconfig */,
+				F52F4F0372B5A7D91399A4CF /* Pods-PALiOSTests.release.xcconfig */,
+				4331D5F01221D5A322BCE043 /* Pods-PALiOSUITests.debug.xcconfig */,
+				A54D83F39E401349B00F7186 /* Pods-PALiOSUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D9EDAD5420196BB200F14050 = {
+			isa = PBXGroup;
+			children = (
+				D9EFA82521F5037100924DE8 /* README.md */,
+				D9EDAD5F20196BB200F14050 /* PALiOS */,
+				D9EDAD7720196BB200F14050 /* PALiOSTests */,
+				D9EDAD8220196BB200F14050 /* PALiOSUITests */,
+				D9EDAD5E20196BB200F14050 /* Products */,
+				A548B63640F9EBC316AAD144 /* Frameworks */,
+				D668C02251E4308891CBEB30 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		D9EDAD5E20196BB200F14050 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9EDAD5D20196BB200F14050 /* PALiOS.app */,
+				D9EDAD7420196BB200F14050 /* PALiOSTests.xctest */,
+				D9EDAD7F20196BB200F14050 /* PALiOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D9EDAD5F20196BB200F14050 /* PALiOS */ = {
+			isa = PBXGroup;
+			children = (
+				D92E46F82082937D00500045 /* PALiOS.entitlements */,
+				D9C10DE120470B4A00993CC0 /* BackendDataStorage.swift */,
+				D9C10DDB2047074000993CC0 /* PALiOSstructs.swift */,
+				D9EE41242066D515007408DA /* PatientSelectTableViewCell.swift */,
+				D9927FF3208E6D200042B8C2 /* RoundDateResultTableViewCell.swift */,
+				D9F76F4D208E98CA005C55A1 /* StatisticsViewerTableViewCell.swift */,
+				D9EDAD9720196E2200F14050 /* Doctor */,
+				D9EDAD9920196E7900F14050 /* MusicTherapist */,
+				D9EDAD9820196E6B00F14050 /* Parent */,
+				D9EDAD6020196BB200F14050 /* AppDelegate.swift */,
+				D9EDAD6220196BB200F14050 /* ViewController.swift */,
+				D9EDAD6420196BB200F14050 /* Main.storyboard */,
+				D9EDAD6A20196BB200F14050 /* Assets.xcassets */,
+				D9EDAD6C20196BB200F14050 /* LaunchScreen.storyboard */,
+				D9EDAD6F20196BB200F14050 /* Info.plist */,
+				D9DDD06D203D51E000AD60CD /* GoogleService-Info.plist */,
+				D9EDAD6720196BB200F14050 /* PALiOS.xcdatamodeld */,
+			);
+			path = PALiOS;
+			sourceTree = "<group>";
+		};
+		D9EDAD7720196BB200F14050 /* PALiOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				D9EDAD7820196BB200F14050 /* PALiOSTests.swift */,
+				D9EDAD7A20196BB200F14050 /* Info.plist */,
+			);
+			path = PALiOSTests;
+			sourceTree = "<group>";
+		};
+		D9EDAD8220196BB200F14050 /* PALiOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D9EDAD8320196BB200F14050 /* PALiOSUITests.swift */,
+				D9EDAD8520196BB200F14050 /* Info.plist */,
+			);
+			path = PALiOSUITests;
+			sourceTree = "<group>";
+		};
+		D9EDAD9720196E2200F14050 /* Doctor */ = {
+			isa = PBXGroup;
+			children = (
+				D9EDAD9520196DDE00F14050 /* DoctorHelp.swift */,
+				D9EDAD9120196DBF00F14050 /* DoctorMain.swift */,
+				D98BE5B2201AE226003CA0A6 /* DoctorSelectPatient.swift */,
+				D9EDAD9320196DCF00F14050 /* DoctorViewStatistics.swift */,
+				D97621512086FE89000FA1D4 /* DoctorObserveStatistics.swift */,
+			);
+			path = Doctor;
+			sourceTree = "<group>";
+		};
+		D9EDAD9820196E6B00F14050 /* Parent */ = {
+			isa = PBXGroup;
+			children = (
+				D9FAC55F201EC7F400360C91 /* ParentMain.swift */,
+				D9FAC561201EC80700360C91 /* ParentStatus.swift */,
+				D9FAC563201EC81B00360C91 /* ParentHelp.swift */,
+			);
+			path = Parent;
+			sourceTree = "<group>";
+		};
+		D9EDAD9920196E7900F14050 /* MusicTherapist */ = {
+			isa = PBXGroup;
+			children = (
+				D9FAC567201EC84C00360C91 /* TherapistMain.swift */,
+				D9FAC565201EC83C00360C91 /* TherapistSelectPatient.swift */,
+				D9FAC569201EC85D00360C91 /* TherapistViewStatistics.swift */,
+				D976214F2086FE23000FA1D4 /* TherapistObserveStatistics.swift */,
+				D9FAC56F201EC8A000360C91 /* TherapistChoosePatient.swift */,
+				D9FAC56D201EC88D00360C91 /* TherapistReleasePatient.swift */,
+				D9FAC56B201EC87200360C91 /* TherapistCreateAccount.swift */,
+				D9FAC573201EC8F400360C91 /* TherapistAssociateIDLullaby.swift */,
+				D9FAC571201EC8B200360C91 /* TherapistRecordLullaby.swift */,
+				D9FAC575201EC92A00360C91 /* TherapistHelp.swift */,
+				D919EDD620798CEF00CB4CE0 /* TherapistAssociatePAL.swift */,
+				D919EDD82079934A00CB4CE0 /* TherapistRecordData.swift */,
+				D97621532086FE9D000FA1D4 /* TherapistRateSession.swift */,
+			);
+			path = MusicTherapist;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D9EDAD5C20196BB200F14050 /* PALiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9EDAD8820196BB200F14050 /* Build configuration list for PBXNativeTarget "PALiOS" */;
+			buildPhases = (
+				37C6666298E456E9D16A5BE4 /* [CP] Check Pods Manifest.lock */,
+				D9EDAD5920196BB200F14050 /* Sources */,
+				D9EDAD5A20196BB200F14050 /* Frameworks */,
+				D9EDAD5B20196BB200F14050 /* Resources */,
+				F8D47E7E628017A62274B008 /* [CP] Embed Pods Frameworks */,
+				4E6328D9E315103D2F333A92 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PALiOS;
+			productName = PALiOS;
+			productReference = D9EDAD5D20196BB200F14050 /* PALiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D9EDAD7320196BB200F14050 /* PALiOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9EDAD8B20196BB200F14050 /* Build configuration list for PBXNativeTarget "PALiOSTests" */;
+			buildPhases = (
+				DECA1FE1682C8DD1F9204BBE /* [CP] Check Pods Manifest.lock */,
+				D9EDAD7020196BB200F14050 /* Sources */,
+				D9EDAD7120196BB200F14050 /* Frameworks */,
+				D9EDAD7220196BB200F14050 /* Resources */,
+				45DD9BCAF78D2D08F000D641 /* [CP] Embed Pods Frameworks */,
+				8FE477C788B16F6BB3647E9D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9EDAD7620196BB200F14050 /* PBXTargetDependency */,
+			);
+			name = PALiOSTests;
+			productName = PALiOSTests;
+			productReference = D9EDAD7420196BB200F14050 /* PALiOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D9EDAD7E20196BB200F14050 /* PALiOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9EDAD8E20196BB200F14050 /* Build configuration list for PBXNativeTarget "PALiOSUITests" */;
+			buildPhases = (
+				8B04CB6AB3A0BADEF2320A95 /* [CP] Check Pods Manifest.lock */,
+				D9EDAD7B20196BB200F14050 /* Sources */,
+				D9EDAD7C20196BB200F14050 /* Frameworks */,
+				D9EDAD7D20196BB200F14050 /* Resources */,
+				2FB530FC50880E35AAA91EA1 /* [CP] Embed Pods Frameworks */,
+				75FD6D80EEE6D3CA79B72D39 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9EDAD8120196BB200F14050 /* PBXTargetDependency */,
+			);
+			name = PALiOSUITests;
+			productName = PALiOSUITests;
+			productReference = D9EDAD7F20196BB200F14050 /* PALiOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D9EDAD5520196BB200F14050 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "sammatime22";
+				TargetAttributes = {
+					D9EDAD5C20196BB200F14050 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.WAC = {
+								enabled = 1;
+							};
+						};
+					};
+					D9EDAD7320196BB200F14050 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D9EDAD5C20196BB200F14050;
+					};
+					D9EDAD7E20196BB200F14050 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D9EDAD5C20196BB200F14050;
+					};
+				};
+			};
+			buildConfigurationList = D9EDAD5820196BB200F14050 /* Build configuration list for PBXProject "PALiOS" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D9EDAD5420196BB200F14050;
+			productRefGroup = D9EDAD5E20196BB200F14050 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D9EDAD5C20196BB200F14050 /* PALiOS */,
+				D9EDAD7320196BB200F14050 /* PALiOSTests */,
+				D9EDAD7E20196BB200F14050 /* PALiOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D9EDAD5B20196BB200F14050 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9EDAD6E20196BB200F14050 /* LaunchScreen.storyboard in Resources */,
+				D9DDD06E203D51E000AD60CD /* GoogleService-Info.plist in Resources */,
+				D9EFA82621F5037100924DE8 /* README.md in Resources */,
+				D9EDAD6B20196BB200F14050 /* Assets.xcassets in Resources */,
+				D9EDAD6620196BB200F14050 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9EDAD7220196BB200F14050 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9EDAD7D20196BB200F14050 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2FB530FC50880E35AAA91EA1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PALiOSUITests/Pods-PALiOSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37C6666298E456E9D16A5BE4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PALiOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		45DD9BCAF78D2D08F000D641 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PALiOSTests/Pods-PALiOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E6328D9E315103D2F333A92 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PALiOS/Pods-PALiOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75FD6D80EEE6D3CA79B72D39 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PALiOSUITests/Pods-PALiOSUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B04CB6AB3A0BADEF2320A95 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PALiOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FE477C788B16F6BB3647E9D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PALiOSTests/Pods-PALiOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DECA1FE1682C8DD1F9204BBE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PALiOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8D47E7E628017A62274B008 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PALiOS/Pods-PALiOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PALiOS/Pods-PALiOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D9EDAD5920196BB200F14050 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9EE41252066D515007408DA /* PatientSelectTableViewCell.swift in Sources */,
+				D97621502086FE23000FA1D4 /* TherapistObserveStatistics.swift in Sources */,
+				D919EDD92079934A00CB4CE0 /* TherapistRecordData.swift in Sources */,
+				D9FAC572201EC8B200360C91 /* TherapistRecordLullaby.swift in Sources */,
+				D9EDAD6320196BB200F14050 /* ViewController.swift in Sources */,
+				D9FAC570201EC8A000360C91 /* TherapistChoosePatient.swift in Sources */,
+				D9EDAD6920196BB200F14050 /* PALiOS.xcdatamodeld in Sources */,
+				D9FAC56C201EC87200360C91 /* TherapistCreateAccount.swift in Sources */,
+				D9FAC560201EC7F400360C91 /* ParentMain.swift in Sources */,
+				D9EDAD9420196DCF00F14050 /* DoctorViewStatistics.swift in Sources */,
+				D9FAC562201EC80700360C91 /* ParentStatus.swift in Sources */,
+				D9EDAD6120196BB200F14050 /* AppDelegate.swift in Sources */,
+				D97621522086FE89000FA1D4 /* DoctorObserveStatistics.swift in Sources */,
+				D9F76F4E208E98CA005C55A1 /* StatisticsViewerTableViewCell.swift in Sources */,
+				D97621542086FE9D000FA1D4 /* TherapistRateSession.swift in Sources */,
+				D9FAC576201EC92A00360C91 /* TherapistHelp.swift in Sources */,
+				D9FAC56E201EC88D00360C91 /* TherapistReleasePatient.swift in Sources */,
+				D9FAC566201EC83C00360C91 /* TherapistSelectPatient.swift in Sources */,
+				D9FAC568201EC84C00360C91 /* TherapistMain.swift in Sources */,
+				D9FAC574201EC8F400360C91 /* TherapistAssociateIDLullaby.swift in Sources */,
+				D9FAC56A201EC85D00360C91 /* TherapistViewStatistics.swift in Sources */,
+				D9C10DDC2047074000993CC0 /* PALiOSstructs.swift in Sources */,
+				D9EDAD9220196DC000F14050 /* DoctorMain.swift in Sources */,
+				D919EDD720798CEF00CB4CE0 /* TherapistAssociatePAL.swift in Sources */,
+				D9C10DE220470B4A00993CC0 /* BackendDataStorage.swift in Sources */,
+				D98BE5B3201AE226003CA0A6 /* DoctorSelectPatient.swift in Sources */,
+				D9927FF4208E6D200042B8C2 /* RoundDateResultTableViewCell.swift in Sources */,
+				D9FAC564201EC81B00360C91 /* ParentHelp.swift in Sources */,
+				D9EDAD9620196DDE00F14050 /* DoctorHelp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9EDAD7020196BB200F14050 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9EDAD7920196BB200F14050 /* PALiOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9EDAD7B20196BB200F14050 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9EDAD8420196BB200F14050 /* PALiOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D9EDAD7620196BB200F14050 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9EDAD5C20196BB200F14050 /* PALiOS */;
+			targetProxy = D9EDAD7520196BB200F14050 /* PBXContainerItemProxy */;
+		};
+		D9EDAD8120196BB200F14050 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9EDAD5C20196BB200F14050 /* PALiOS */;
+			targetProxy = D9EDAD8020196BB200F14050 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D9EDAD6420196BB200F14050 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9EDAD6520196BB200F14050 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D9EDAD6C20196BB200F14050 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9EDAD6D20196BB200F14050 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D9EDAD8620196BB200F14050 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D9EDAD8720196BB200F14050 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D9EDAD8920196BB200F14050 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D59EF6E5FC1CF8F0237455E /* Pods-PALiOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PALiOS/PALiOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ND8H7RX7AL;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = PALiOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sammyreles.PALiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D9EDAD8A20196BB200F14050 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21DEDCD8DC504558C7FE7FC1 /* Pods-PALiOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PALiOS/PALiOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ND8H7RX7AL;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = PALiOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sammyreles.PALiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D9EDAD8C20196BB200F14050 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFFD7538C7CA8AD04BFE86F2 /* Pods-PALiOSTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ND8H7RX7AL;
+				INFOPLIST_FILE = PALiOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sammyreles.PALiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PALiOS.app/PALiOS";
+			};
+			name = Debug;
+		};
+		D9EDAD8D20196BB200F14050 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F52F4F0372B5A7D91399A4CF /* Pods-PALiOSTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ND8H7RX7AL;
+				INFOPLIST_FILE = PALiOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sammyreles.PALiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PALiOS.app/PALiOS";
+			};
+			name = Release;
+		};
+		D9EDAD8F20196BB200F14050 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4331D5F01221D5A322BCE043 /* Pods-PALiOSUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ND8H7RX7AL;
+				INFOPLIST_FILE = PALiOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sammyreles.PALiOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PALiOS;
+			};
+			name = Debug;
+		};
+		D9EDAD9020196BB200F14050 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A54D83F39E401349B00F7186 /* Pods-PALiOSUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ND8H7RX7AL;
+				INFOPLIST_FILE = PALiOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sammyreles.PALiOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PALiOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D9EDAD5820196BB200F14050 /* Build configuration list for PBXProject "PALiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9EDAD8620196BB200F14050 /* Debug */,
+				D9EDAD8720196BB200F14050 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9EDAD8820196BB200F14050 /* Build configuration list for PBXNativeTarget "PALiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9EDAD8920196BB200F14050 /* Debug */,
+				D9EDAD8A20196BB200F14050 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9EDAD8B20196BB200F14050 /* Build configuration list for PBXNativeTarget "PALiOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9EDAD8C20196BB200F14050 /* Debug */,
+				D9EDAD8D20196BB200F14050 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9EDAD8E20196BB200F14050 /* Build configuration list for PBXNativeTarget "PALiOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9EDAD8F20196BB200F14050 /* Debug */,
+				D9EDAD9020196BB200F14050 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D9EDAD6720196BB200F14050 /* PALiOS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D9EDAD6820196BB200F14050 /* PALiOS.xcdatamodel */,
+			);
+			currentVersion = D9EDAD6820196BB200F14050 /* PALiOS.xcdatamodel */;
+			path = PALiOS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D9EDAD5520196BB200F14050 /* Project object */;
+}

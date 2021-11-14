@@ -1,0 +1,6 @@
+framework module Pods_PALiOS {
+  umbrella header "Pods-PALiOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

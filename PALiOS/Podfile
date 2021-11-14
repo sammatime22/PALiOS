@@ -1,0 +1,24 @@
+# Uncomment the next line to define a global platform for your project
+ platform :ios, '9.0'
+
+target 'PALiOS' do
+  pod 'Firebase'
+  pod 'Firebase/Core'
+  pod 'Firebase/Database'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Storage'
+  pod 'BlueCapKit', '~> 0.6'
+  use_frameworks!
+
+  # Pods for PALiOS
+  target 'PALiOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'PALiOSUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
